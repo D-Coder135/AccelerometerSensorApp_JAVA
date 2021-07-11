@@ -26,5 +26,6 @@ public class MainActivity extends AppCompatActivity {
         yaxis = findViewById(R.id.textView2);
         zaxis = findViewById(R.id.textView3);
         mediaPlayer = MediaPlayer.create(this, R.raw.thunder);
+        sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
     }
 }
