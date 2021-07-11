@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         String yInString = Integer.toString(y);
         String zInString = Integer.toString(z);
 
+        xaxis.setText(xInString);
+
+
         if (x != 0 || y != 0 || z != 0) {
             mediaPlayer.start();
             imageView.setImageResource(R.drawable.on);
