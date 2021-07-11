@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             mediaPlayer.start();
             imageView.setImageResource(R.drawable.on);
         } else {
-
+            mediaPlayer.pause();
         }
     }
 
