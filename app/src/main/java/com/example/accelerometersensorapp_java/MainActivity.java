@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-
+        float xValue = event.values[0];
     }
 
     @Override
