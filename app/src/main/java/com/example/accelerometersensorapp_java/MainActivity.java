@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         String zInString = Integer.toString(z);
 
         xaxis.setText(xInString);
+        yaxis.setText(yInString);
 
 
         if (x != 0 || y != 0 || z != 0) {
