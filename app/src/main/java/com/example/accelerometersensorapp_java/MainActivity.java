@@ -27,5 +27,6 @@ public class MainActivity extends AppCompatActivity {
         zaxis = findViewById(R.id.textView3);
         mediaPlayer = MediaPlayer.create(this, R.raw.thunder);
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
+        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
     }
 }
