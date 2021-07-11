@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         xaxis =  findViewById(R.id.textView);
         yaxis = findViewById(R.id.textView2);
-
+        zaxis = findViewById(R.id.textView3);
     }
 }
