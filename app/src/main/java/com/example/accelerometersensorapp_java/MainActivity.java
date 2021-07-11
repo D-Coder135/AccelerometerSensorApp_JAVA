@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         int x = (int)xValue;
         int y = (int)yValue;
         int z = (int)zValue;
+
+        String xInString = Integer.toString(x);
     }
 
     @Override
