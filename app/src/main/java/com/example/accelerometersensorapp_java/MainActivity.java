@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.hardware.Sensor;
+import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
@@ -30,5 +31,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 }
