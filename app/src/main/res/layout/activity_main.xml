@@ -35,4 +35,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="153dp"
         android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="45dp"
+        android:text="TextView" />
 </RelativeLayout>
