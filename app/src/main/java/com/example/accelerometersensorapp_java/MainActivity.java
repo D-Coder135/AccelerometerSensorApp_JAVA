@@ -7,12 +7,14 @@ import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     MediaPlayer mediaPlayer;
     SensorManager sensorManager;
     Sensor sensor;
+    TextView xaxis, yaxis, zaxis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
