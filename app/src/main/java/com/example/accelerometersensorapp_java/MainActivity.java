@@ -2,7 +2,6 @@ package com.example.accelerometersensorapp_java;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -17,14 +16,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     MediaPlayer mediaPlayer;
     SensorManager sensorManager;
     Sensor sensor;
-    TextView xaxis, yaxis, zaxis;
+    TextView xAxisValue, yaxis, zaxis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.imageView);
-        xaxis =  findViewById(R.id.textView);
+        xAxisValue =  findViewById(R.id.textView);
         yaxis = findViewById(R.id.textView2);
         zaxis = findViewById(R.id.textView3);
         mediaPlayer = MediaPlayer.create(this, R.raw.thunder);
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         String yInString = Integer.toString(y);
         String zInString = Integer.toString(z);
 
-        xaxis.setText(xInString);
+        xAxisValue.setText(xInString);
         yaxis.setText(yInString);
         zaxis.setText(zInString);
 
