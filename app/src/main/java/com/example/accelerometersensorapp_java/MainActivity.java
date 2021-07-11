@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     MediaPlayer mediaPlayer;
     SensorManager sensorManager;
     Sensor sensor;
-    TextView xAxisValue, yaxis, zaxis;
+    TextView xAxisValue, yAxisValue, zaxis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
         imageView = findViewById(R.id.imageView);
         xAxisValue =  findViewById(R.id.textView);
-        yaxis = findViewById(R.id.textView2);
+        yAxisValue = findViewById(R.id.textView2);
         zaxis = findViewById(R.id.textView3);
         mediaPlayer = MediaPlayer.create(this, R.raw.thunder);
         sensorManager = (SensorManager)getSystemService(SENSOR_SERVICE);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         String zInString = Integer.toString(z);
 
         xAxisValue.setText(xInString);
-        yaxis.setText(yInString);
+        yAxisValue.setText(yInString);
         zaxis.setText(zInString);
 
 
