@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         float xValue = event.values[0];
         float yValue = event.values[1];
         float zValue = event.values[2];
+
+        int x = (int)xValue;
     }
 
     @Override
